@@ -80,3 +80,5 @@ function presses(phrase) {
   }
   return sumpress;
 }
+
+// or
