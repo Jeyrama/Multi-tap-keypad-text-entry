@@ -51,3 +51,32 @@ presses required for any phrase, with the following requirements:
 
 
 // Solution
+
+function presses(phrase) {
+  let sumpress = 0;
+  for (let i = 0; i < phrase.length; i++)
+  {
+    switch (true)
+    {
+      case (/[1adgjmptw\s]/i.test(phrase[i])):
+        sumpress++;
+        break;
+      case (/[behknqux0]/i.test(phrase[i])):
+        sumpress += 2;
+        break;
+      case (/[cfilorvy]/i.test(phrase[i])):
+        sumpress += 3;
+        break;
+      case (/[sz234568]/i.test(phrase[i])):
+        sumpress += 4;
+        break;
+      case (/[79]/.test(phrase[i])):
+        sumpress += 5;
+        break;
+      default:
+        sumpress++;
+        break;
+    }
+  }
+  return sumpress;
+}
