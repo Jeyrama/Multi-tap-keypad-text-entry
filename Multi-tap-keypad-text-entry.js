@@ -48,3 +48,6 @@ presses required for any phrase, with the following requirements:
     (but you should allow your module to accept input in either form, for convenience).
     Tested phrases contain letters (A-Z and a-z), digits (0-9), and special characters # and *.
 */
+
+
+// Solution
